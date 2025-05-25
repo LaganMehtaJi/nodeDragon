@@ -1,13 +1,13 @@
 import React from 'react'
-
 import './App.css'
-import Heroone from './Heroone.jsx';
+
+import AppRoutes from './routes/AppRoutes.jsx';
 
 function App() {
   
   return (
     <>
-   <Heroone/>
+    <AppRoutes/>
     </>
   )
 }

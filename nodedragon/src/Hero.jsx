@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "remixicon/fonts/remixicon.css";
 import intor from "../public/intro.mp3";
+import { Link } from "react-router-dom";
 function Hero() {
   let [showContent, setShowContent] = useState(false);
   // 🔊 Play sound for 10 seconds on mount
@@ -207,9 +208,9 @@ function Hero() {
                 <p className="mt-10 text-4xl font-[Helvetica_Now_Display]">
                  NodeDragon is a backend builder where we can create server logic using blocks. It’s like using LEGO to build APIs. You don’t need to write full code — just drag blocks to handle things like auth, database
                 </p>
-                <button className="bg-green-500 px-10 py-10 text-black mt-10 text-6xl w-200 rounded">
+   <Link to={"Creator"}>              <button className="bg-green-500 px-10 py-10 text-black mt-10 text-6xl w-200 rounded">
                   Create Server
-                </button>
+                </button></Link>  
               </div>
             </div>
           </div>
